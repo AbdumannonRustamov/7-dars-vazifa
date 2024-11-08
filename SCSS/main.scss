@@ -1,0 +1,321 @@
+@import './fonts';
+@import './normalize.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Scrollni olib tashlash */
+}
+
+.icon-text-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.gcc h2 {
+    margin-bottom: 10px;
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9E9EC;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-circle img {
+    width: 24px;
+    height: 24px;
+}
+
+.text-content {
+    color: #333;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #6B6B6C;
+    margin: 0;
+    width: 100%;
+    max-width: 295px;
+}
+
+.gcc {
+    display: flex;
+    padding: 0 60px;
+    gap: 20px;
+    /* 280px dan 20px ga o'zgartirildi */
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+    @media (max-width: 1024px) {
+        gap: 60px;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.texts {
+    padding: 50px;
+    text-align: center;
+
+    h1 {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    p {
+        font-family: 'PT Sans', sans-serif;
+        max-width: 467px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6B6B6C;
+        margin: 0 auto;
+    }
+}
+
+.card_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card_content {
+    max-width: 393px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 5px 18px rgba(191, 191, 191, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    margin: 10px;
+
+    h4 {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 10px;
+    }
+
+    p {
+        max-width: 340px;
+        font-family: 'PT Sans', sans-serif;
+        color: #6B6B6C;
+        margin-top: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.divs {
+    padding: 15px;
+    margin: 0 auto;
+
+    .card_price {
+        display: inline-flex;
+        flex-direction: column;
+
+        img {
+            padding-inline: 15px;
+        }
+
+        a {
+            font-family: 'Exo 2', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            color: #363738;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            color: rgb(109, 158, 201);
+            transform: scale(1.05);
+        }
+    }
+}
+
+.texts-2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    padding: 35px;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.card_container-2 {
+    max-width: 1400px;
+    padding-inline: 100px;
+    margin: 0 auto;
+}
+
+.card_content-2 {
+    box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+
+    .photo img {
+        padding: 32px 0;
+        width: 100%;
+        max-width: 100%;
+        /* Rasmning kengligini kengaytirdi */
+    }
+
+    .card_1 h5 {
+        font-weight: 600;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .card_1 p {
+        max-width: 568px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 24px;
+        color: #6B6B6C;
+        margin-top: 20px;
+    }
+}
+
+.cards-2 {
+    min-width: 1212px;
+    margin: 0 auto;
+}
+
+.texts-3 {
+    padding: 35px;
+    margin: 0 auto;
+
+    h2 {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+    }
+}
+
+.unity {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.one {
+    max-width: 184px;
+    text-align: center;
+    padding: 20px;
+
+    p:nth-of-type(1) {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    p:nth-of-type(2) {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #6B6B6C;
+        margin-top: 8px;
+    }
+}
+
+.two2 {
+    display: flex;
+    gap: 75px;
+    margin-top: 80px;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.two {
+    @extend .one;
+
+    img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+.three {
+    @extend .one;
+}
+
+.four {
+    @extend .one;
+    max-width: 225px;
+
+    p:nth-of-type(1) {
+        text-align: center;
+    }
+
+    p:nth-of-type(2) {
+        max-width: 225px;
+    }
+}
